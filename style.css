@@ -2,7 +2,7 @@
     --main-color: #d3ad7f;
     --black: #13131a;
     --bg: #010103;
-    --border: 0.1rem solid rgba(255,255,155,0.3);
+    --border: 0.1rem solid rgba(255,255,255,0.3);
     font-size: 10px;
 }
 
@@ -13,9 +13,104 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: 0.3 linear;
+    transition: 0.3s linear;
+    font-family: "Poppins", sans-serif;
 
 }
 body{
+    background-color: var(--bg);
+}
+section{
+   padding: 3rem 2rem;
+   margin: 0 auto;
+   max-width: 1200px; 
+}
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--bg);
+}
+.head section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+.navbar a{
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.navbar a:hover{
+  color: var(--main-color);  
+  border-bottom: 0.01rem solid var(--main-color);
+  padding-bottom: 0.3rem;
+  font-size: 2.2rem;
+
+}
+.icones img{
+    margin: 1rem;
+    cursor: pointer;
+     
+}
+.icones img:hover{
+    width: 40px;
+    height: 40px;
+}
+.btn{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+.home-container{
+    background-image: url(./caf11.jpg);
+    background-size: cover;
+    background-position: center;
+  height: 100vh;
+width: auto;
+  
+}
+.home-container section{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    min-height: 100vh;
+}
+.content{
+    max-width: 60rem;
+}
+.content h3{
+    color: #fff;
+    font-size: 5rem;
+}
+.content p{
+  color: #fff;
+  font-size: 1.8rem; 
+  font-weight: 150; 
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+.title{
+    font-size: 5rem;
+    color: var(--main-color);
+    text-align: center;
+
+}
+.title span{
+    color: #fff;
     
+
+}
+.about{
+
 }
